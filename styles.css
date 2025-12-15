@@ -254,3 +254,45 @@ li{margin:6px 0; line-height:1.5}
   text-align:center;
 }
 code{background:var(--chip); padding:2px 6px; border-radius:8px; border:1px solid var(--line)}
+
+/* ===== HEADER & LOGOS ===== */
+
+.site-header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 24px 32px;
+  margin-bottom: 32px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+}
+
+.telfer-logo {
+  height: 52px; /* slightly larger for prominence */
+}
+
+.green-logo {
+  opacity: 0.95;
+}
+
+.title-block h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
