@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Reinventing the 1st year of the BCom at Telfer | Visual Report</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <meta name="description" content="Interactive web brochure summarizing recommendations to reinvent the 1st year of the B.Com at Telfer (September 2025 workshops)."/>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logos">
+        <!-- Replace these with your real logos in /assets and update src -->
+        <img class="logo" src="assets/logo-prefab.svg" alt="Pedagogical Prefiguration Lab logo (placeholder)"/>
+        <img class="logo" src="assets/logo-telfer.svg" alt="Telfer School of Management logo (placeholder)"/>
+        <img class="logo" src="assets/logo-green-academy.svg" alt="Telfer Green Academy logo (placeholder)"/>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">Reinventing the 1st year of the BCom at Telfer</div>
+        <div class="brand-sub">Recommendations from the &quot;pedagogical prefiguration&quot; workshops held in September 2025</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="expandAll" class="btn">Expand all</button>
+      <button id="collapseAll" class="btn btn-ghost">Collapse all</button>
+      <button id="printBtn" class="btn btn-ghost">Print / Save PDF</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Table of contents">
+      <div class="side-head">
+        <div class="side-title">Contents</div>
+        <label class="search">
+          <span class="sr-only">Search</span>
+          <input id="searchInput" type="search" placeholder="Search (e.g., AI, Brightspace, feedback)…"/>
+        </label>
+      </div>
+
+      <nav id="toc" class="toc">
+        <a href="#cover">Cover</a>
+        <a href="#thanks">Acknowledgements</a>
+        <a href="#exec">Executive Summary</a>
+        <a href="#intro">Introduction</a>
+        <a href="#method">Methodology</a>
+        <div class="toc-divider">Recommendations</div>
+        <a href="#axis1">Axis 1: Innovation governance</a>
+        <a href="#axis2">Axis 2: Support for faculty</a>
+        <a href="#axis3">Axis 3: Pedagogical relationship</a>
+        <a href="#axis4">Axis 4: Student experience</a>
+        <a href="#axis5">Axis 5: Artificial intelligence</a>
+        <a href="#conclusion">Conclusion</a>
+      </nav>
+
+      <div class="side-footer">
+        <div class="pill">GitHub Pages ready</div>
+        <div class="muted">Tip: add audio later in /audio for interview mode.</div>
+      </div>
+    </aside>
+
+    <main id="main" class="content">
+      <section id="cover" class="card cover">
+        <div class="cover-grid">
+          <div>
+            <h1>Reinventing the 1st year of the BCom at Telfer</h1>
+            <p class="lead">Recommendations from the &quot;pedagogical prefiguration&quot; workshops held in September 2025</p>
+            <div class="meta">
+              <div><span class="k">Under the coordination of</span> <span class="v">Mathieu Bouchard</span></div>
+              <div class="muted">Assistant Professor of Strategy and Organization</div>
+              <div style="height:10px"></div>
+              <div><span class="k">Report written by</span> <span class="v">Hamza Tawdi</span></div>
+              <div class="muted">Research Assistant</div>
+            </div>
+          </div>
+          <div class="cover-right">
+            <div class="badge">September 2025 Workshops</div>
+            <div class="cover-note">
+              <div class="muted">Interactive web brochure</div>
+              <div>Use the sidebar to navigate. Expand any recommendation to read the full content.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="thanks" class="card">
+        <h2>Acknowledgements</h2>
+        <p>This report is the result of a collaborative effort between students, full-time and part-time faculty, and pedagogical professionals at the Telfer School of Management as part of the Innovations in Education Series. This report was made possible by funding from the Undergraduate Programs Committee through the Dom Herrick Experiential Learning and Entrepreneurship Fund and the Telfer Green Academy.</p>
+<p>We warmly thank all those who participated in the workshops for the quality of their reflections and their commitment to redefining the first year of the Bachelor of Commerce (B.Com.). Their discussions made it possible to identify a shared, concrete and inspiring vision of the pedagogical future of the program. We also thank all those who contributed with their administrative support and support. Their names are presented below in alphabetical order by first name.</p>
+        <details class="details">
+          <summary>Participant list (alphabetical by first name)</summary>
+          <div class="columns">Abdul Kane, Adam Balafrej, Ahmad Mahdi Formuly, Amanda Wilson, Anastasiia Komisarenko, Ashley Gouveia, Blake Gauthier, Camila Estrada, Dan Ngenzi Ya Ruty, Daina Mazutis, Dana Hyde, Devan Hemstead, Éric Nelson, Francesca Nitica, Haniyah Aamir, Isabelle Décarie, Jade Christina Blaise, Jasmin Manseau, Jean-Francois Aubert, Jolene Hurtubise, Julien Leclair-Dionne, Kimberly Nault, Linda Lizotte, Matteo Martone, Matthew Archibald, Maemonah Arshad, Marie Astel Gaye, Mero Obuwoma, Mohamed Chelli, Qiu Chen, Rafaella De Castro, Sara-Maude Couture, Sam Sharifi, Omar Al Kanouni, Owen Andrew Parkins, Phuong Tran, Takwa Youssef, Thea Peters, Umar Ruhi</div>
+        </details>
+      </section>
+
+      <section id="exec" class="card">
+        <h2>Executive Summary</h2>
+        <p>This report is part of  the Telfer School of Management&#x27;s Innovations in Education Series. It presents a synthesis of the findings, reflections and recommendations resulting from three co-construction workshops bringing together professors, students and pedagogical advisors around the same objective: to adapt the pedagogy of the B.Com in order to strengthen its coherence, participation and alignment with the needs of a changing world.</p>
+<p>The exercise was not aimed at a simple reform of content, but at a cultural and institutional transformation. The discussions highlighted several converging challenges: the need for more collaborative academic governance, the need to support faculty pedagogical training, the redefinition of the classroom relationship, the coherence of the student pathway, as well as the ethical framework for the use of artificial intelligence.</p>
+<p>Based on these observations, we formulate ten recommendations structured in five areas :</p>
+<p>Axis 1: Innovation governance</p>
+<p>Axis 2: Support for faculty</p>
+<p>Axis 3: Pedagogical relationship</p>
+<p>Axis 4: Student experience</p>
+<p>Axis 5: Artificial intelligence</p>
+<p>These orientations reflect a common desire: to make the Telfer B.Com a training model that balances academic excellence, pedagogical innovation and educational humanism.</p>
+<p>Beyond reforms, this report proposes a sustainable vision: that of a school where teaching, learning and collaboration become shared acts, driven by trust, responsibility and creativity. The renewed B.Com aims to train managers capable not only of performing, but also of thinking and acting meaningfully in a changing world.</p>
+      </section>
+
+      <section id="intro" class="card">
+        <h2>Introduction</h2>
+        <p>The revision of the Telfer School of Management&#x27;s Bachelor of Commerce (B.Com) program is part of a collective process of pedagogical transformation initiated as part of the Telfer Innovations in Education Series.</p>
+<p>The objective was not to produce a technical or curricular reform, but to push the boundaries of pedagogy by rethinking the way of teaching, learning and collaborating. This initiative, supported by the faculty&#x27;s management, brought together professors, students, academic advisors and staff members in the same space for reflection and co-construction.</p>
+<p>The first year of the B.Com served as a starting point, perceived as a founding moment where students&#x27; reference points, motivation and sense of belonging are forged. The discussions revealed a shared observation: beyond the content and methods, it is the pedagogical relationship between professors, students and institutions that determines the quality of the learning experience.</p>
+<p>The workshops made it possible to name these issues, to understand their causes and to imagine realistic solutions, anchored in everyday academic life.</p>
+<p>This reflection was based on three ambitions:</p>
+<p>Restore the coherence of the training path and give a clear meaning to each stage of the program.</p>
+<p>To strengthen trust and collaboration between actors, by promoting continuous and constructive dialogue.</p>
+<p>Foster a culture of innovation and responsibility, particularly in the use of technology and artificial intelligence.</p>
+<p>The three successive workshops thus constituted a laboratory of living ideas, where the diversity of voices; those of professors, students and advisors, made it possible to identify specific findings and applicable recommendations.</p>
+<p>Each exchange contributed to the emergence of a common vision: that of a school where pedagogy becomes a lever for meaning, coherence and humanism.</p>
+<p>This report presents a synthesis of this work and proposes structuring recommendations to guide the transformation of the B.Com.</p>
+<p>It reflects the very spirit of Telfer: an institution that looks to the future, is committed to excellence, and believes that quality education is born of dialogue, trust and the courage to innovate together.</p>
+      </section>
+
+      <section id="method" class="card">
+        <h2>Methodology</h2>
+        
+      </section>
+
+      <section id="axis1" class="card axis">
+        <div class="axis-head">
+          <h2>Axis 1: Innovation governance</h2>
+          <div class="axis-tools">
+            <button class="btn btn-small btn-ghost toggle-axis" data-axis="axis1">Toggle axis</button>
+          </div>
+        </div>
+        <div class="recs">
+    
+        </div>
+      </section>
+    
+      <section id="axis2" class="card axis">
+        <div class="axis-head">
+          <h2>Axis 2: Support for faculty</h2>
+          <div class="axis-tools">
+            <button class="btn btn-small btn-ghost toggle-axis" data-axis="axis2">Toggle axis</button>
+          </div>
+        </div>
+        <div class="recs">
+    
+        </div>
+      </section>
+    
+      <section id="axis3" class="card axis">
+        <div class="axis-head">
+          <h2>Axis 3: Pedagogical relationship</h2>
+          <div class="axis-tools">
+            <button class="btn btn-small btn-ghost toggle-axis" data-axis="axis3">Toggle axis</button>
+          </div>
+        </div>
+        <div class="recs">
+    
+        </div>
+      </section>
+    
+      <section id="axis4" class="card axis">
+        <div class="axis-head">
+          <h2>Axis 4: Student experience</h2>
+          <div class="axis-tools">
+            <button class="btn btn-small btn-ghost toggle-axis" data-axis="axis4">Toggle axis</button>
+          </div>
+        </div>
+        <div class="recs">
+    
+        </div>
+      </section>
+    
+      <section id="axis5" class="card axis">
+        <div class="axis-head">
+          <h2>Axis 5: Artificial intelligence</h2>
+          <div class="axis-tools">
+            <button class="btn btn-small btn-ghost toggle-axis" data-axis="axis5">Toggle axis</button>
+          </div>
+        </div>
+        <div class="recs">
+    
+        </div>
+      </section>
+    
+      <section id="conclusion" class="card">
+        <h2>Conclusion</h2>
+        <p>The work carried out through the workshops was not intended to correct a curriculum, but to reinvent the way we teach, learn and collaborate.</p>
+<p>The transformation of the B.Com is based on a clear ambition: to train minds capable of discernment, rigour and openness, in a world where information is abundant but meaning is scarce. She recognizes that the quality of an education is not measured solely by the transmission of knowledge, but by an institution&#x27;s ability to cultivate curiosity, critical thinking and intellectual ethics.</p>
+<p>The teachers expressed their desire to give meaning to their teaching, to create spaces for dialogue and to nurture critical thinking. The students, for their part, have shown a desire to learn differently, to understand the why behind the how, and to actively participate in the evolution of the program.</p>
+<p>By bringing these two voices together, Telfer is reconnecting with its primary vocation: to make knowledge a living, shared and demanding experience.</p>
+<p>Reinventing the first year of the B.Com means giving coherence and breath to the course. It means making technology a tool for discernment, not ease, and integrity a collective strength, not a constraint. It is to affirm that pedagogical modernity is not based on rupture, but on a renewed alliance between teachers and students, united by the search for meaning and the passion for learning.</p>
+<p>This reform commits each member of the community to contribute to a culture of trust, listening and shared excellence. It calls for a pedagogy of courage, where innovation is aligned with the values of responsibility and intellectual rigour, and where success becomes a common work.</p>
+<p>The Telfer School of Management is thus positioned as a clear-sighted and committed institution, which does not undergo change but shapes it. By training managers capable of understanding, questioning and acting responsibly, it fulfills the promise of the renewed B.Com:</p>
+<p>learn to think about the world in order to better transform it.</p>
+      </section>
+
+      <footer class="footer">
+        <div class="muted">Built for GitHub Pages. Replace placeholder logos in <code>/assets</code>. Export via Print to PDF if needed.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
