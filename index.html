@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telfer – Dialogues on Reimagining the B.Com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="app-inner">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-left">
+          <div class="eyebrow">Telfer · Pedagogical Prefiguration</div>
+          <div class="title">
+            Dialogues on
+            <span class="highlight">Reimagining the First Year</span>
+          </div>
+          <div class="subtitle">
+            An interactive “interview-style” script between professors and students,
+            based on 10 key recommendations for the B.Com renewal.
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="tag-pill">
+            <span class="tag-dot"></span>
+            Live Learning Lab · Prof × Student
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN LAYOUT -->
+      <main class="layout">
+        <!-- LEFT: CHAPTERS -->
+        <aside class="chapters-panel">
+          <div class="chapters-title">
+            <span class="icon">🎬</span>
+            Episodes · 10 Conversations
+          </div>
+          <p class="chapters-subtitle">
+            Select a recommendation to watch the professor–student dialogue.
+          </p>
+          <div class="chapter-list" id="chapterList">
+            <!-- Filled by JS -->
+          </div>
+        </aside>
+
+        <!-- RIGHT: PLAYER -->
+        <section class="player-panel">
+          <div class="player-header">
+            <div class="player-meta">
+              <div class="player-episode" id="playerEpisode">EP01 · Governance</div>
+              <div class="player-title" id="playerTitle">
+                Joint Student–Faculty Innovation Committee
+              </div>
+              <div class="player-meta-line" id="playerMetaLine">
+                A recurring dialogue space to align decisions, experiences, and responsibility.
+              </div>
+            </div>
+            <div class="player-controls">
+              <button class="btn-ghost" id="playButton" type="button">
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill="currentColor" d="M4 3.5v13l11.5-6.5L4 3.5z"/>
+                </svg>
+                Play conversation
+              </button>
+            </div>
+          </div>
+
+          <!-- VIDEO FRAME -->
+          <div class="video-frame">
+            <div class="video-inner">
+              <div class="speaker-tabs">
+                <button class="speaker-tab active" data-speaker="professor" id="profTab" type="button">
+                  <span class="avatar prof">P</span>
+                  Professor
+                </button>
+                <button class="speaker-tab" data-speaker="student" id="stuTab" type="button">
+                  <span class="avatar stu">S</span>
+                  Student
+                </button>
+              </div>
+
+              <div class="speaker-header">
+                <div>
+                  <div class="speaker-name" id="speakerName">Professor</div>
+                  <div class="speaker-role" id="speakerRole">
+                    Faculty voice · Framing the recommendation
+                  </div>
+                </div>
+              </div>
+
+              <p class="speaker-quote" id="speakerQuote">
+                <span class="quote-mark">“</span>
+                In our classes, we often make instructional decisions with the best of intentions,
+                but without always knowing how they are actually perceived by students. Having a
+                structured space where their perspectives can be heard on a regular basis would help
+                us better align our choices with their needs. This kind of dialogue would promote
+                mutual understanding and strengthen the coherence of the programme, without adding
+                to anyone’s workload.
+              </p>
+
+              <div class="video-timeline">
+                <div class="timeline-bar">
+                  <div class="timeline-fill" id="timelineFill"></div>
+                </div>
+                <div class="timeline-labels">
+                  <span id="timelineLabelLeft">Professor</span>
+                  <span id="timelineLabelRight">Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <footer class="footer">
+            <span>
+              Scripted from workshop testimonies · Use as narration text or dialogue prompts in a video.
+            </span>
+            <span class="footer-pill">
+              Tip: record a split-screen interview, one “episode” per recommendation.
+            </span>
+          </footer>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
